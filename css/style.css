@@ -1,0 +1,108 @@
+body {
+  background: #dedede; }
+
+.clock-bazel {
+  margin: 50px auto;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 12px;
+  border: 2px solid #1b1827;
+  background: #424158;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #424158 0%, #29252f 47%, #201a21 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #424158 0%, #29252f 47%, #201a21 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #424158 0%, #29252f 47%, #201a21 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424158', endColorstr='#201a21',GradientType=0 );
+  /* IE6-9 */ }
+  .clock-bazel .clock-wrapper {
+    width: calc(100% - 18px);
+    height: calc(100% - 18px);
+    border-radius: 50%;
+    border: 2px solid #271D2B;
+    overflow: hidden;
+    padding: 8px;
+    background: #424158;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #424158 0%, #1c1c1c 50%, #1c1c1c 50%, #40384e 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #424158 0%, #1c1c1c 50%, #1c1c1c 50%, #40384e 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #424158 0%, #1c1c1c 50%, #1c1c1c 50%, #40384e 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#424158', endColorstr='#40384e',GradientType=0 );
+    /* IE6-9 */ }
+    .clock-bazel .clock-wrapper .clock {
+      height: calc(100% - 2px);
+      width: calc(100% - 2px);
+      border-radius: 50%;
+      border: 1px solid #1c1827;
+      background: #41425a;
+      /* Old browsers */
+      background: -moz-linear-gradient(-45deg, #41425a 0%, #474965 50%, #2f2934 100%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(-45deg, #41425a 0%, #474965 50%, #2f2934 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(135deg, #41425a 0%, #474965 50%, #2f2934 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#41425a', endColorstr='#2f2934',GradientType=1 );
+      /* IE6-9 fallback on horizontal gradient */
+      position: relative; }
+      .clock-bazel .clock-wrapper .clock .day-date {
+        display: block;
+        position: absolute;
+        color: white;
+        top: 15%;
+        left: 42%;
+        padding: 10px;
+        font-family: Georgia; }
+        .clock-bazel .clock-wrapper .clock .day-date .day {
+          color: red;
+          font-size: 12px;
+          margin-right: 5px; }
+        .clock-bazel .clock-wrapper .clock .day-date .date {
+          font-size: 28px; }
+      .clock-bazel .clock-wrapper .clock .hand {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        -webkit-transform-origin: 100%;
+        -ms-transform-origin: 100%;
+        transform-origin: 100%;
+        background: white; }
+        .clock-bazel .clock-wrapper .clock .hand.second {
+          height: 1px;
+          left: 70px;
+          width: 121px;
+          background: red;
+          z-index: 3; }
+          .clock-bazel .clock-wrapper .clock .hand.second:after {
+            position: absolute;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: red;
+            display: block;
+            content: '';
+            right: -5px;
+            top: -4.5px; }
+        .clock-bazel .clock-wrapper .clock .hand.minute {
+          background: transparent;
+          box-shadow: inset 0px 0px 0px 1px #fff;
+          height: 5px;
+          z-index: 2;
+          left: 40px;
+          top: calc(50% - 2px);
+          width: 151px; }
+        .clock-bazel .clock-wrapper .clock .hand.hour {
+          height: 2px;
+          z-index: 1;
+          left: 100px;
+          top: calc(50% - 0.5px);
+          width: 91px; }
